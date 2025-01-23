@@ -80,7 +80,7 @@ public class Main {
 
         System.out.println("Enter the sentence for palindrome: ");
         String sentence = scanner.nextLine();
-        String cc = sentence.replace(" ", "");
+        String cc = sentence.replaceAll("[^a-zA-Z0-9]", "");
         String[] sentenceArr = cc.split(" ");
         System.out.println(Arrays.toString(sentenceArr));
         int c2 = 0;
